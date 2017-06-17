@@ -22,10 +22,15 @@ public class StringManipulation {
         char prev = 0;
         for (int i = 0; i < input.length(); i++) {
             char curr = Character.toLowerCase(input.charAt(i));
-            if (prev > curr) {
-                return false;
+            if (Character.isLetter(prev) && Character.isLetter(curr)) {
+                if (prev > curr) {
+                    return false;
+                }
             }
-            prev = curr;
+
+            if (Character.isLetter(curr)) {
+                prev = curr;
+            }
         }
         return true;
     }

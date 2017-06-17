@@ -12,6 +12,8 @@ public class StringManipulationTest {
         assertTrue(StringManipulation.isAlphabetical("abcd"));
         assertTrue(StringManipulation.isAlphabetical("ACdf"));
         assertFalse(StringManipulation.isAlphabetical("Fed"));
+        assertTrue(StringManipulation.isAlphabetical("ab-cd"));
+        assertFalse(StringManipulation.isAlphabetical("c-ab"));
     }
 
 }
