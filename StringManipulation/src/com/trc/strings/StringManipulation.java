@@ -49,6 +49,13 @@ public class StringManipulation {
         return sb.toString();
     }
 
+    /**
+     * The capitalizeVowels method is used to capitalize all of the vowels in an
+     * input string.
+     * 
+     * @param input a string to be modified
+     * @return a string with all of the vowels capitalized
+     */
     public static String capitalizeVowels(String input) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < input.length(); i++) {
