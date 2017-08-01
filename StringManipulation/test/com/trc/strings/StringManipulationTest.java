@@ -1,5 +1,6 @@
 package com.trc.strings;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -16,4 +17,11 @@ public class StringManipulationTest {
         assertFalse(StringManipulation.isAlphabetical("c-ab"));
     }
 
+    @Test
+    public void testReverseString() {
+        assertEquals(StringManipulation.reverseString("racecar"), "racecar");
+        assertEquals(StringManipulation.reverseString("bad"), "dab");
+        assertEquals(StringManipulation.reverseString(""), "");
+        assertEquals(StringManipulation.reverseString("a"), "a");
+    }
 }
