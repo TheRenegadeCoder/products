@@ -35,6 +35,12 @@ public class StringManipulation {
         return true;
     }
 
+    /**
+     * The reverseString method is used to reverse an input string.
+     * 
+     * @param input a string to be reversed
+     * @return the resulting string in reverse order
+     */
     public static String reverseString(String input) {
         StringBuilder sb = new StringBuilder();
         for (int i = input.length() - 1; i >= 0; i--) {
