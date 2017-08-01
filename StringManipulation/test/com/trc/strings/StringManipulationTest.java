@@ -33,4 +33,10 @@ public class StringManipulationTest {
         assertEquals("AnImAl PEOplE", StringManipulation.capitalizeVowels("Animal People"));
         assertEquals("AEIOU", StringManipulation.capitalizeVowels("aeiou"));
     }
+
+    @Test
+    public void testInsertSpacesBetweenLetters() {
+        assertEquals("h e l l o", StringManipulation.insertSpacesBetweenLetters("hello"));
+        assertEquals("E x t r a S p a c e", StringManipulation.insertSpacesBetweenLetters("Extra Space"));
+    }
 }
