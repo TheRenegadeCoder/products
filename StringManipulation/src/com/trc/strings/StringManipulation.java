@@ -49,4 +49,17 @@ public class StringManipulation {
         return sb.toString();
     }
 
+    public static String capitalizeVowels(String input) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < input.length(); i++) {
+            char curr = Character.toUpperCase(input.charAt(i));
+            if (curr == 65 || curr == 69 || curr == 73 || curr == 79 || curr == 85) {
+                sb.append(curr);
+            } else {
+                sb.append(input.charAt(i));
+            }
+        }
+        return sb.toString();
+    }
+
 }

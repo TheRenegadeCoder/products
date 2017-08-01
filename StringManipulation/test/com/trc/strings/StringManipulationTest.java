@@ -19,9 +19,15 @@ public class StringManipulationTest {
 
     @Test
     public void testReverseString() {
-        assertEquals(StringManipulation.reverseString("racecar"), "racecar");
-        assertEquals(StringManipulation.reverseString("bad"), "dab");
-        assertEquals(StringManipulation.reverseString(""), "");
-        assertEquals(StringManipulation.reverseString("a"), "a");
+        assertEquals("racecar", StringManipulation.reverseString("racecar"));
+        assertEquals("dab", StringManipulation.reverseString("bad"));
+        assertEquals("", StringManipulation.reverseString(""));
+        assertEquals("a", StringManipulation.reverseString("a"));
+    }
+
+    @Test
+    public void testCapitalizeVowels() {
+        assertEquals("hEllO", StringManipulation.capitalizeVowels("hello"));
+        assertEquals("A", StringManipulation.capitalizeVowels("a"));
     }
 }
