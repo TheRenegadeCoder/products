@@ -29,5 +29,7 @@ public class StringManipulationTest {
     public void testCapitalizeVowels() {
         assertEquals("hEllO", StringManipulation.capitalizeVowels("hello"));
         assertEquals("A", StringManipulation.capitalizeVowels("a"));
+        assertEquals("b", StringManipulation.capitalizeVowels("b"));
+        assertEquals("AnImAl PEOplE", StringManipulation.capitalizeVowels("Animal People"));
     }
 }
