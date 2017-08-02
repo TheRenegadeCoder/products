@@ -144,16 +144,48 @@ public class StringManipulation {
      * @return a string containing all characters from start to end
      */
     public static String generateAllChars(char start, char end) {
-        StringBuilder sb = new StringBuilder();
+        // Special case where the end is before the start
         if (start > end) {
             char temp = start;
             start = end;
             end = temp;
         }
+
+        // The generation algorithm
+        StringBuilder sb = new StringBuilder();
         for (char curr = start; curr <= end; curr++) {
             sb.append(curr);
         }
         return sb.toString();
     }
 
+    /**
+     * The containsSubSequence method accepts two strings where the first string
+     * is searched for the second string in the same order.
+     * 
+     * @param input
+     * @param subsequence
+     * @return
+     */
+    public static boolean containsSubSequence(String input, String subsequence) {
+        // Special case where the subsequence is larger than the input
+        if (subsequence.length() > input.length()) {
+            return false;
+        }
+
+        // Traverse both strings
+        int j = 0;
+        for (int i = 0; i < input.length() && j < subsequence.length() - 1; i++) {
+            if (input.charAt(i) == subsequence.charAt(j)) {
+                j++;
+            }
+        }
+
+        // Final check
+        if (j == subsequence.length() - 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

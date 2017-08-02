@@ -65,4 +65,12 @@ public class StringManipulationTest {
         assertEquals(",-./0123456789:;<=>?", StringManipulation.generateAllChars(',', '?'));
         assertEquals("34567", StringManipulation.generateAllChars('3', '7'));
     }
+
+    @Test
+    public void testContainsSubSequence() {
+        assertTrue(StringManipulation.containsSubSequence("hello", "e"));
+        assertTrue(StringManipulation.containsSubSequence("hello", "hlo"));
+        assertFalse(StringManipulation.containsSubSequence("batman", "superman"));
+        assertFalse(StringManipulation.containsSubSequence("chris", "sir"));
+    }
 }
