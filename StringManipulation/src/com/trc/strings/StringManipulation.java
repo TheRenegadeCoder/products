@@ -97,4 +97,22 @@ public class StringManipulation {
         return sb.toString();
     }
 
+    /**
+     * The convertToHex method takes a string and converts each character to hex
+     * before assembling a complete hex string. Assumes ASCII such that each
+     * character is represented by two hex values.
+     * 
+     * @param input a string to be modified
+     * @return a string as a hex version of the input
+     */
+    public static String convertToHex(String input) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < input.length(); i++) {
+            char curr = input.charAt(i);
+            String hexString = String.format("%02X", (int) curr);
+            sb.append(hexString);
+        }
+        return sb.toString();
+    }
+
 }

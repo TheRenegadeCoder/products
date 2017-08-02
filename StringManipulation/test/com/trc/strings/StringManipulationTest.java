@@ -40,4 +40,12 @@ public class StringManipulationTest {
         assertEquals("E x t r a S p a c e", StringManipulation.insertSpacesBetweenLetters("Extra Space"));
         assertEquals("h o w d y", StringManipulation.insertSpacesBetweenLetters("    ho    wd y   "));
     }
+
+    @Test
+    public void testConvertToHex() {
+        assertEquals("68656C6C6F", StringManipulation.convertToHex("hello"));
+        assertEquals("", StringManipulation.convertToHex(""));
+        assertEquals("0A", StringManipulation.convertToHex("\n"));
+        assertEquals("20", StringManipulation.convertToHex(" "));
+    }
 }
