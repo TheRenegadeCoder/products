@@ -163,9 +163,9 @@ public class StringManipulation {
      * The containsSubSequence method accepts two strings where the first string
      * is searched for the second string in the same order.
      * 
-     * @param input
-     * @param subsequence
-     * @return
+     * @param input a string under search
+     * @param subsequence the sequence to search for
+     * @return true if the input string contains the subsequence string
      */
     public static boolean containsSubSequence(String input, String subsequence) {
         // Special case where the subsequence is larger than the input
