@@ -56,4 +56,9 @@ public class StringManipulationTest {
         assertEquals("hello", StringManipulation.removeChar("hello", 't'));
         assertEquals("hello", StringManipulation.removeChar("    h e l   l o   ", ' '));
     }
+
+    @Test
+    public void testGenerateAllChars() {
+        assertEquals("abcde", StringManipulation.generateAllChars('a', 'e'));
+    }
 }

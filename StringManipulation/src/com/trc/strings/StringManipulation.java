@@ -134,4 +134,12 @@ public class StringManipulation {
         return sb.toString();
     }
 
+    public static String generateAllChars(char start, char end) {
+        StringBuilder sb = new StringBuilder();
+        for (char curr = start; curr <= end; curr++) {
+            sb.append(curr);
+        }
+        return sb.toString();
+    }
+
 }
