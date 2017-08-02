@@ -6,6 +6,11 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
+/**
+ * A string manipulation test class.
+ * 
+ * Copyright (C) 2017 Jeremy Griffith
+ */
 public class StringManipulationTest {
 
     @Test
