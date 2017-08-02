@@ -115,6 +115,14 @@ public class StringManipulation {
         return sb.toString();
     }
 
+    /**
+     * The removeChar methods takes a string and removes all instances of a
+     * particular character.
+     * 
+     * @param input a string to be modified
+     * @param toRemove a character to remove from the input string
+     * @return a string with all instances of a particular character removed
+     */
     public static String removeChar(String input, char toRemove) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < input.length(); i++) {
