@@ -48,4 +48,12 @@ public class StringManipulationTest {
         assertEquals("0A", StringManipulation.convertToHex("\n"));
         assertEquals("20", StringManipulation.convertToHex(" "));
     }
+
+    @Test
+    public void testRemoveChar() {
+        assertEquals("heo", StringManipulation.removeChar("hello", 'l'));
+        assertEquals("", StringManipulation.removeChar("", 'a'));
+        assertEquals("hello", StringManipulation.removeChar("hello", 't'));
+        assertEquals("hello", StringManipulation.removeChar("    h e l   l o   ", ' '));
+    }
 }

@@ -115,4 +115,15 @@ public class StringManipulation {
         return sb.toString();
     }
 
+    public static String removeChar(String input, char toRemove) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < input.length(); i++) {
+            char curr = input.charAt(i);
+            if (curr != toRemove) {
+                sb.append(curr);
+            }
+        }
+        return sb.toString();
+    }
+
 }
