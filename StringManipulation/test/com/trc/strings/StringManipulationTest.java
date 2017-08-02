@@ -38,5 +38,6 @@ public class StringManipulationTest {
     public void testInsertSpacesBetweenLetters() {
         assertEquals("h e l l o", StringManipulation.insertSpacesBetweenLetters("hello"));
         assertEquals("E x t r a S p a c e", StringManipulation.insertSpacesBetweenLetters("Extra Space"));
+        assertEquals("h o w d y", StringManipulation.insertSpacesBetweenLetters("    ho    wd y   "));
     }
 }
