@@ -134,8 +134,22 @@ public class StringManipulation {
         return sb.toString();
     }
 
+    /**
+     * The generateAllChars method takes two characters and generates a string
+     * from all the characters in between inclusively. The string will be in
+     * ASCII order.
+     * 
+     * @param start the first character defining the range of characters
+     * @param end the last character defining the range of characters
+     * @return a string containing all characters from start to end
+     */
     public static String generateAllChars(char start, char end) {
         StringBuilder sb = new StringBuilder();
+        if (start > end) {
+            char temp = start;
+            start = end;
+            end = temp;
+        }
         for (char curr = start; curr <= end; curr++) {
             sb.append(curr);
         }

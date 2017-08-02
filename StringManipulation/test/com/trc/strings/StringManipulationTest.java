@@ -60,5 +60,9 @@ public class StringManipulationTest {
     @Test
     public void testGenerateAllChars() {
         assertEquals("abcde", StringManipulation.generateAllChars('a', 'e'));
+        assertEquals("abcde", StringManipulation.generateAllChars('e', 'a'));
+        assertEquals("A", StringManipulation.generateAllChars('A', 'A'));
+        assertEquals(",-./0123456789:;<=>?", StringManipulation.generateAllChars(',', '?'));
+        assertEquals("34567", StringManipulation.generateAllChars('3', '7'));
     }
 }
