@@ -2,6 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="StringManipulation/src"/>
 	<classpathentry kind="src" path="StringManipulation/test"/>
+	<classpathentry kind="src" path="RenegadeSchool/src"/>
+	<classpathentry kind="src" path="RenegadeSchool/test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="StringManipulation/bin"/>
