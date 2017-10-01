@@ -1,7 +1,5 @@
 package com.trc.school;
 
-import com.trc.school.Course;
-
 public class Student {
 
     private String firstName;
