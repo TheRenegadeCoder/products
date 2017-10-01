@@ -42,6 +42,12 @@ public class Course {
         }
     }
 
+    @Override
+    public String toString() {
+        return String.format("%s\nStudy Hours: %d/%d\nAssignments: %d/%d", this.name, this.studyHoursComplete,
+                this.numberOfStudyHours, this.assignmentsComplete, this.numberOfAssignments);
+    }
+
     public String getName() {
         return this.name;
     }
