@@ -47,4 +47,20 @@ public class Student {
     public Course getCodingCourse() {
         return this.codingCourse;
     }
+
+    public void setMathCourse(Course mathCourse) {
+        this.mathCourse = mathCourse;
+    }
+
+    public Course getMathCourse() {
+        return this.mathCourse;
+    }
+
+    public void setEnglishCourse(Course englishCourse) {
+        this.englishCourse = englishCourse;
+    }
+
+    public Course getEnglishCourse() {
+        return this.englishCourse;
+    }
 }
