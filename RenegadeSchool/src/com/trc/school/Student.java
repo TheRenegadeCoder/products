@@ -1,20 +1,19 @@
 package com.trc.school;
 
+import com.trc.school.Course;
+
 public class Student {
 
-    private int id;
     private String firstName;
     private String lastName;
     private String address;
+    private Course codingCourse;
+    private Course mathCourse;
+    private Course englishCourse;
 
-    public Student(String firstName, String lastName, int id) {
+    public Student(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.id = id;
-    }
-
-    public int getID() {
-        return this.id;
     }
 
     public void setFirstName(String firstName) {
@@ -39,5 +38,13 @@ public class Student {
 
     public String getAddress(String address) {
         return this.address;
+    }
+
+    public void setCodingCourse(Course codingCourse) {
+        this.codingCourse = codingCourse;
+    }
+
+    public Course getCodingCourse() {
+        return this.codingCourse;
     }
 }
