@@ -32,19 +32,25 @@ public class Course {
         }
     }
 
-    public String getName() {
-        return this.name;
-    }
-
-    public int getNumberOfHours() {
-        return this.numberOfStudyHours;
-    }
-
     public boolean isComplete() {
-        if (studyHoursComplete == 0) {
+        boolean hasStudied = this.studyHoursComplete == this.numberOfStudyHours;
+        boolean hasFinishedAssignments = this.assignmentsComplete == this.numberOfAssignments;
+        if (hasStudied && hasFinishedAssignments) {
             return true;
         } else {
             return false;
         }
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getNumberOfStudyHours() {
+        return this.numberOfStudyHours;
+    }
+
+    public int getNumberOfAssignments() {
+        return this.numberOfAssignments;
     }
 }
