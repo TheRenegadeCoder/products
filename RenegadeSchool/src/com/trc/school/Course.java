@@ -3,23 +3,32 @@ package com.trc.school;
 public class Course {
 
     private String name;
-    private boolean complete;
-    private int numberOfHours;
-    private int hoursRemaining;
+    private int numberOfStudyHours;
+    private int studyHoursComplete;
+    private int numberOfAssignments;
+    private int assignmentsComplete;
 
-    public Course(String name, int numberOfHours) {
+    public Course(String name, int numberOfHours, int numberOfAssignments) {
         this.name = name;
-        this.complete = false;
-        this.numberOfHours = numberOfHours;
-        this.hoursRemaining = numberOfHours;
+        this.numberOfStudyHours = numberOfHours;
+        this.studyHoursComplete = 0;
+        this.numberOfAssignments = numberOfAssignments;
+        this.assignmentsComplete = 0;
     }
 
     public void study(int duration) {
-        if (this.hoursRemaining - duration < 0) {
-            this.hoursRemaining = 0;
-            this.complete = true;
+        if (this.studyHoursComplete + duration > this.numberOfStudyHours) {
+            this.studyHoursComplete = this.numberOfStudyHours;
         } else {
-            this.hoursRemaining -= duration;
+            this.studyHoursComplete += duration;
+        }
+    }
+
+    public void doAssignment() {
+        if (this.assignmentsComplete + 1 > this.numberOfAssignments) {
+            this.assignmentsComplete = this.numberOfAssignments;
+        } else {
+            this.assignmentsComplete += 1;
         }
     }
 
@@ -28,10 +37,14 @@ public class Course {
     }
 
     public int getNumberOfHours() {
-        return this.numberOfHours;
+        return this.numberOfStudyHours;
     }
 
     public boolean isComplete() {
-        return this.complete;
+        if (studyHoursComplete == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
