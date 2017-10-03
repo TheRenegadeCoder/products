@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="Data/" kind="src" path="Basics/009-Review/Solutions/Source"/>
+	<classpathentry kind="src" path="Basics/007-Loops/Solutions/Source"/>
+	<classpathentry kind="src" path="Basics/006-JUnitTesting/Solutions/Source"/>
+	<classpathentry kind="src" path="Basics/005-ControlFlow/Solutions"/>
+	<classpathentry kind="src" path="Basics/004-ClassStructure/Solutions"/>
+	<classpathentry kind="src" path="Basics/008-Readability/Solutions/Source"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
